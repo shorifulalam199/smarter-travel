@@ -8,21 +8,35 @@
 </head>
 <body>
     <header>
-        <section>
+        <nav>
             <div class="container navbar">
                 <div class="title-bar">
                     <img src="Images/logo.png" alt="logo">
                     <h1>Smarter <span class="important">Travel</span></h1>
                 </div>
                 <div class="navbar-section">
-                    <a class="first-ancor" href="#">Home</a>
-                    <a href="#">Packages</a>
-                    <a href="#">Testimonial</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    <ul>
+                        <li><a class="first-ancor" href="#">Home</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                        <li><a class="first-ancor" href="#">Home</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </nav>
     </header>
     <main>
 
@@ -30,5 +44,6 @@
     <footer>
 
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

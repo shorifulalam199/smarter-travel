@@ -15,7 +15,7 @@
     width: 85%;
     max-width: 1200px;
     margin: 0 auto;
-    border: 2px solid;
+    /* border: 2px solid; */
 }
 
 
@@ -29,8 +29,7 @@
 .title-bar{
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 50px 0;
+    padding: 40px 5px;
 }
 
 .title-bar h1{
@@ -42,10 +41,13 @@
     color: #FF5400;
 }
 
-.navbar-section{
-    border: 1px solid;
+.navbar-section ul {
+    display: flex;
 }
-.navbar-section a{
+.navbar-section ul li{
+    list-style: none;
+}
+.navbar-section li a{
     padding: 0 20px ;
     color:#424247;
     text-align: center;
@@ -55,10 +57,70 @@
 .navbar-section .first-ancor{
     color: #FF5400;
 }
+.navbar-section ul li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    background-color: #FF5400;
+}
+#hamburger-icon div{
+    width: 35px;
+    height: 35px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 6px;
+    transition: 0.4s;
+}
 
-
-
-
+#hamburger-icon ul li{
+    list-style: none;
+    background-color: rgba(236, 98, 29, 0.9);
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+}
+#hamburger-icon li a{
+    padding: 0 20px ;
+    color:#424247;
+    font-size: 1.15rem;
+    text-decoration: none;
+    font-size: 700;
+    color: aliceblue;
+}
+#hamburger-icon ul li:hover{
+    background-color: #FF5400;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2{
+    opacity: 0;
+}
+.open .bar3{
+    -webkit-transform: rotate(-45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh-50px);
+    width: 100%;
+}
 
 
 
@@ -73,5 +135,10 @@
 
 /* responsive for Mobile devices */
 @media screen and (max-width: 600px) {
-    
+    .navbar-section{
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+    }
 }
