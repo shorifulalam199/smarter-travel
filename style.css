@@ -122,7 +122,60 @@
     width: 100%;
 }
 
+/* ============Explore our Travel section start+========= */
+.banner-background{
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(./Images/bridge.png);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    height: 500px;
+    
+}
 
+.banner-background h1{
+    color: #FFF;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom:  1rem;
+}
+.banner-background p{
+    color: #FFF;
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+}
+.seraching{
+    display: flex;
+    justify-content: center;
+    padding:20px 0;
+    gap: 15px;
+    border-radius: 8px;
+    width: 75%;
+    margin: 70px auto;
+    background-color: rgba(252, 248, 248, 0.5);
+    
+
+}
+.seraching select, input, button{
+    width: 174px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgba(19, 19, 24, 0.4);
+    outline: none;
+    border: none;
+    font-size: 20px;
+
+}
+.seraching select option{
+    color: #FF5400;
+}
+.seraching button{
+    color: white;
+    background-color: #FF5400;
+}
 
 
 
@@ -141,4 +194,33 @@
     #hamburger-icon{
         display: block;
     }
+    .banner-background{
+        height: auto;
+        object-fit: cover;
+        background-position: center;
+    }
+    .seraching{
+        flex-direction: column;
+    }
+    .banner-background h1{
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom:  .5rem;
+    }
+    .banner-background p{
+        text-align: center;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .seraching{
+        margin: 5px auto;
+    }
+    .seraching select, input, button{
+        width: 100%;
+    }
+
+
 }
