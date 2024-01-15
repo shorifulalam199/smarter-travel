@@ -440,12 +440,34 @@ li {
 
 
 
+/* footer section start */
+.footer-section .title-bar{
+    justify-content: center;
+}
+#footer-section-all{
+    background: rgba(19, 19, 24, 0.05);
+}
 
+.footer-text p{
+    color: #5A5A5D;
+    text-align: center;
+    padding: 0 200px;
+}
+.socila-icon {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    padding: 15px 20px;
+}
+.socila-icon i{
+    padding: 15px 15px;
+    margin: 15px 0;
+}
 
-
-
-
-
+.copyright p{
+    margin: 20px;
+    color: #131318;
+}
 
 
 
@@ -555,7 +577,10 @@ li {
 
     .chose-3 {
         width: 100%;
-        padding: 0;
+        padding: 0px;
+    }
+    .chose-3 p, .chose-3 img, .chose-3 h2{
+        padding: 15px 30px;
     }
     .offer{
         background-color: #FF5400;
@@ -582,4 +607,12 @@ li {
     .newslatter-img{
         margin-top: 20px;
     }
+
+    .footer-text p{
+        color: #5A5A5D;
+        text-align: center;
+        padding: 0 20px;
+    }
+
 }
+
