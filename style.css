@@ -15,9 +15,18 @@
     width: 85%;
     max-width: 1200px;
     margin: 0 auto;
-    /* border: 2px solid; */
 }
-
+.btn-primary{
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+}
+.btn-primary:hover{
+    border-radius: 8px;
+    background: #c74505;
+    color: #FFF;
+    cursor: pointer;
+}
 
 /* =====Navbar section start====== */
 .navbar{
@@ -167,7 +176,6 @@
     outline: none;
     border: none;
     font-size: 20px;
-
 }
 .seraching select option{
     color: #FF5400;
@@ -176,10 +184,51 @@
     color: white;
     background-color: #FF5400;
 }
+.seraching button:hover{
+    color: white;
+    background-color: #dd5d1c;
+    cursor: pointer;
+}
 
+/* =====populer-tour-section===start=== */
+#populer-tour-section{
+    margin: 100px 0;
+}
+.populer-tour{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.poputer-tour-text{
+    text-align: justify;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    line-height: 26px;
+    width: 50%;
 
-
-
+}
+.poputer-tour-text h2{
+    color: #131318;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+.poputer-tour-text p, li{
+    padding-bottom: 15px;
+}
+.poputer-tour-img{
+    width: 50%;
+}
+.poputer-tour-img img{
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.read-more-button{
+    margin-top: 20px;
+}
 
 
 
@@ -199,7 +248,8 @@
         object-fit: cover;
         background-position: center;
     }
-    .seraching{
+    .seraching,
+    .populer-tour{
         flex-direction: column;
     }
     .banner-background h1{
@@ -218,9 +268,11 @@
     .seraching{
         margin: 5px auto;
     }
-    .seraching select, input, button{
+    .seraching select, input, button, .poputer-tour-img, .poputer-tour-text{
         width: 100%;
     }
-
+    .read-more-button{
+        width: 50%;
+    }
 
 }
