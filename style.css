@@ -382,6 +382,7 @@ li {
 .newslatter-sectinon{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .newslatter-img img{
