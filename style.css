@@ -282,7 +282,7 @@ li {
 .destination-img2 {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 10px;
 }
 
 .destination-img2 img {
@@ -297,24 +297,27 @@ li {
 .h6-text {
     position: absolute;
     bottom: 150px;
-    left: 200px;
+    left: 150px;
     color: #FFF;
     text-align: center;
     font-size: 28px;
     font-weight: 800;
 }
 
+
 .destination-img-3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0px;
+    gap: 10px;
 }
 
 .destination-img-4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 /* ======choose item start====== */
@@ -468,6 +471,7 @@ li {
 .copyright p{
     margin: 20px;
     color: #131318;
+    padding-bottom: 30px;
 }
 
 
@@ -487,12 +491,17 @@ li {
  }
  .extra img{
     text-align: center;
+    padding-left: 50px;
  }
  .extra p{
     text-align: justify;
     padding: 20px 0;
  }
 
+ .extra{
+    align-items: center;
+    background-color: rgba(247, 239, 239, 0.5);
+ }
 
 
 
@@ -635,5 +644,8 @@ li {
         padding: 0 20px;
     }
 
+.dest3{
+    width: 95%;
+}
 }
 
